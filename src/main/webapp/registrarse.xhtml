@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: josue
+  Date: 21/3/2024
+  Time: 14:37
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputStylesheet name="css/estilo.css"/>
+    <h:outputStylesheet name="css/estilo1.css"/>
+    <title>Registrarse</title>
+</h:head>
+
+<h:body>
+
+    <div class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Dentro de tu barra de navegación -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/index.xhtml"><i class="fas fa-home"></i> Inicio</h:outputLink>
+                    </li>
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/carrito.xhtml"><i class="fas fa-shopping-cart"></i> Carrito</h:outputLink>
+                    </li>
+                    <!-- Opción de Catálogo con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <h:outputLink class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Catálogo
+                        </h:outputLink>
+                        <ul class="dropdown-menu">
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/plantas.xhtml">Plantas</h:outputLink></li>
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/herramientas.xhtml">Herramientas</h:outputLink></li>
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/abono.xhtml">Abono</h:outputLink></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Opción de inicio de sesión / cierre de sesión -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/login.xhtml">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </h:outputLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 centered-form">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Registrarse
+                    </div>
+                    <div class="card-body">
+                        <h:form class="mx-auto text-center">
+                            <div class="mb-3">
+                                <h:outputLabel for="Nombre" styleClass="form-label">Nombre</h:outputLabel>
+                                <h:inputText type="text" styleClass="form-control" id="Nombre"/>
+                            </div>
+                            <div class="mb-3">
+                                <h:outputLabel for="email" styleClass="form-label">Correo Electrónico</h:outputLabel>
+                                <h:inputText type="email" styleClass="form-control" id="email" aria-describedby="emailHelp"/>
+                            </div>
+                            <div class="mb-3">
+                                <h:outputLabel for="password" styleClass="form-label">Contraseña</h:outputLabel>
+                                <h:inputSecret type="password" styleClass="form-control" id="password"/>
+                            </div>
+                            <h:commandButton type="submit" class="btn btn-primary btn-block" value="Registrar"></h:commandButton>
+                        </h:form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="text-white">Universidad Don Bosco | Desarrollo de Aplicaciones con Web Frameworks</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Footer -->
+
+
+
+    <!-- JS de Bootstrap (Opcional, solo si necesitas funcionalidad JavaScript de Bootstrap) -->
+    <h:outputScript src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></h:outputScript>
+    <h:outputScript src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></h:outputScript>
+    <h:outputScript src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></h:outputScript>
+
+</h:body>
+
+</html>

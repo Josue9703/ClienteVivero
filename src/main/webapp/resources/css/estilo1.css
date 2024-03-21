@@ -1,0 +1,8 @@
+.card-img-top {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la imagen al ancho de su contenedor */
+    /* Permite que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+    height: 250px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio disponible sin distorsión */
+}
+

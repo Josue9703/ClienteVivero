@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: josue
+  Date: 21/3/2024
+  Time: 14:37
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputStylesheet name="css/estilo.css"/>
+    <h:outputStylesheet name="css/estilo1.css"/>
+    <title>NaturalWorld</title>
+</h:head>
+
+<h:body>
+
+    <div class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Dentro de tu barra de navegación -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/index.xhtml"><i class="fas fa-home"></i> Inicio</h:outputLink>
+                    </li>
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/carrito.xhtml"><i class="fas fa-shopping-cart"></i> Carrito</h:outputLink>
+                    </li>
+                    <!-- Opción de Catálogo con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <h:outputLink class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Catálogo
+                        </h:outputLink>
+                        <ul class="dropdown-menu">
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/plantas.xhtml">Plantas</h:outputLink></li>
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/herramientas.xhtml">Herramientas</h:outputLink></li>
+                            <li><h:outputLink styleClass="dropdown-item" value="faces/abono.xhtml">Abono</h:outputLink></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Opción de inicio de sesión / cierre de sesión -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h:outputLink styleClass="nav-link" value="faces/login.xhtml">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </h:outputLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Agrega esta sección después de tu sección actual -->
+    <div class="container mt-4">
+        <h2 class="text-center"> Abonos</h2>
+        <div class="row">
+            <!-- Tarjeta 1: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono Universal</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono2.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono TerraPlus</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/ureaprilina-saco.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Fertilizante inorganico</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/Bolsa-NPK-GENERICA.png" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Fertilizante granulado</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/acuario.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono para acuario</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono3.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono de crecimiento</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Tarjeta 2: Producto en oferta -->
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/vigoro.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Fertilizante inorganico(Vigoro)</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abonovege.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono vegetal</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono-orga.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono organico</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/fertiorga.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Fertilizante organico</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono1.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">abono-orga</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h:graphicImage value="resources/img/abono3.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title">Abono</h5>
+                        <p class="card-text">Descripción breve del producto en oferta.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puedes agregar más tarjetas según sea necesario -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="text-white">Universidad Don Bosco | Desarrollo de Aplicaciones con Web Frameworks</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Footer -->
+
+
+
+    <!-- JS de Bootstrap (Opcional, solo si necesitas funcionalidad JavaScript de Bootstrap) -->
+    <h:outputScript src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></h:outputScript>
+    <h:outputScript src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></h:outputScript>
+    <h:outputScript src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></h:outputScript>
+
+</h:body>
+
+</html>
